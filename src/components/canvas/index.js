@@ -59,7 +59,7 @@ class Canvas extends Component {
               depth={1}
             />
             <meshBasicMaterial
-              color={0xa0a000}
+              color={this.props.color}
             />
           </mesh>
         </scene>
