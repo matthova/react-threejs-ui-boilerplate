@@ -40,7 +40,6 @@ class Canvas extends Component {
         width={width}
         height={height}
         onAnimate={this._onAnimate}
-        className="three-js-canvas"
       >
         <scene>
           <perspectiveCamera
