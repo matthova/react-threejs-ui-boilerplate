@@ -1,0 +1,23 @@
+{
+  "name": "threejs-tester",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^4.5.2",
+    "npm-run-all": "^4.0.2",
+    "react": "15.5.3",
+    "react-dom": "15.5.3",
+    "react-scripts": "0.9.5",
+    "react-three-renderer": "3.0.2",
+    "three": "0.84.0"
+  },
+  "scripts": {
+    "watch-css": "npm run build-css && node-sass src/ -o src/ --watch --recursive",
+    "start-js": "react-scripts start",
+    "start": "npm-run-all -p watch-css start-js",
+    "build": "npm run build-css && react-scripts build",
+    "build-css": "node-sass src/ -o src/",
+    "test": "react-scripts test --env=jsdom"
+  }
+}
