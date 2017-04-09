@@ -1,9 +1,11 @@
 {
   "name": "threejs-tester",
+  "homepage": "https://matthova.github.io/react-threejs-ui-boilerplate/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {},
   "devDependencies": {
+    "gh-pages": "^0.12.0",
     "node-sass": "^4.5.2",
     "npm-run-all": "^4.0.2",
     "react": "15.5.3",
@@ -18,6 +20,8 @@
     "start": "npm-run-all -p watch-css start-js",
     "build": "npm run build-css && react-scripts build",
     "build-css": "node-sass src/ -o src/",
-    "test": "react-scripts test --env=jsdom"
+    "test": "react-scripts test --env=jsdom",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   }
 }
